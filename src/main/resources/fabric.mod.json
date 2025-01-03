@@ -11,16 +11,16 @@
   "environment": "*",
   "entrypoints": {
     "client": [
-      "faceless.artent_core.client.ArtentCoreClient"
+      "faceless.artent.core.client.ArtentCoreClient"
     ],
     "main": [
-      "faceless.artent_core.ArtentCore"
+      "faceless.artent.core.ArtentCore"
     ]
   },
   "mixins": [
-    "artent_core.mixins.json",
+    "artent.core.mixins.json",
     {
-      "config": "artent_core.client.mixins.json",
+      "config": "artent.core.client.mixins.json",
       "environment": "client"
     }
   ],
