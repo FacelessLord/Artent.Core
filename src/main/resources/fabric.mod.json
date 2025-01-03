@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "artent",
+  "id": "artent_core",
   "version": "${version}",
   "name": "Artent.Core",
   "description": "UtilityCore mod of Artent",
@@ -11,16 +11,16 @@
   "environment": "*",
   "entrypoints": {
     "client": [
-      "faceless.artent_core.client.ArtentClient"
+      "faceless.artent_core.client.ArtentCoreClient"
     ],
     "main": [
-      "faceless.artent_core.Artent"
+      "faceless.artent_core.ArtentCore"
     ]
   },
   "mixins": [
-    "artent.mixins.json",
+    "artent_core.mixins.json",
     {
-      "config": "artent.client.mixins.json",
+      "config": "artent_core.client.mixins.json",
       "environment": "client"
     }
   ],
