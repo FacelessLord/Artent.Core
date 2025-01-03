@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "artent",
+  "version": "${version}",
+  "name": "Artent.Core",
+  "description": "UtilityCore mod of Artent",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/artent_core/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "faceless.artent_core.client.ArtentClient"
+    ],
+    "main": [
+      "faceless.artent_core.Artent"
+    ]
+  },
+  "mixins": [
+    "artent.mixins.json",
+    {
+      "config": "artent.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
